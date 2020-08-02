@@ -1,0 +1,16 @@
+--this is test--
+--listen succeed--
+client is 126.0.19.119:52905
+
+--epoll_ctl succeed--
+client exit:126.0.19.119:52905
+client is 78.128.113.50:63722
+
+--epoll_ctl succeed--
+client is 78.128.113.50:64527
+
+--epoll_ctl succeed--
+client is 126.0.19.119:62370
+
+--epoll_ctl succeed--
+client exit:126.0.19.119:62370

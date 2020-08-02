@@ -80,7 +80,7 @@ int main() {
 				//std::cout << "\n--found bytes in cfd--" << std::endl;
 				buff_size += read(ev_read[0].data.fd, &(buff[buff_size]), sizeof(buff) - buff_size);
 				//std::cout << "--buff_size = " << buff_size << "--" << std::endl;
-				if (buff_size >10) {
+				if (buff_size >40 || buff[buff_size-1] == '\n') {
 					//std::cout << "--exec ouput--" << std::endl;
 					//write(myfild_fd, buff, buff_size);
 					write(cfd,(char*)s.data(),s.size());
